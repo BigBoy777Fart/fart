@@ -10940,7 +10940,7 @@ runFunction(function()
         Name = "SkidDetector",
         Function = function(callback)
             if callback then
-                repeat task.wait() until game:IsLoaded()
+				repeat task.wait() until game:IsLoaded()
                 local words = {
                     "LoveCleint",
                     "Love Client",
@@ -10954,6 +10954,7 @@ runFunction(function()
                     "pistonware",
                     "themagicpiston"   
                 }
+
                 for i, v in pairs(game:GetService("Players"):GetChildren()) do
                     v.Chatted:Connect(function(msg)
                         for _, word in ipairs(words) do
